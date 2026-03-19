@@ -1,0 +1,4 @@
+taskkill /F /IM python.exe    --curata procesele vechi daca nu ruleaza(in powershell)
+./startnodes.sh config.txt 0 1    --da start la program solo 5 noduri
+python bcastnode.py config.txt 0   --run la program cu david, eu sunt nodul 0
+sleep $(( $(date -d "15:10:00" +%s) - $(date +%s) )) && ./startnodes.sh config.txt 0 1    --timed

@@ -1,0 +1,6 @@
+# Ignorăm mediul virtual Python
+venv/
+__pycache__/
+
+# Ignorăm fișierele de log generate de execuție
+*.log
